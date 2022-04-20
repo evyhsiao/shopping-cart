@@ -1,0 +1,117 @@
+.cartitem {
+    width: 100%;
+    height: 100px;
+    /* padding: 1rem; */
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    gap: 8px;
+    background: #fff;
+    /* border-radius: 2px; */
+    place-items: center;
+}
+
+.cartitem__link {
+    height: auto;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 8px;
+    place-items: center;
+}
+
+.cartitem:hover {
+    background-color: #fdcb81;
+    transition: all 0.3s ease-out;
+}
+
+.cartitem__image {
+    padding: 10px;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.cartitem__image img{
+    /* width: 100%; */
+    height: 100%;
+}
+
+.cartitem__name {
+    /* text-decoration: none; */
+    color: #171717;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cartitem__price {
+    color: #171717;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.cartItem__select {
+    font-size: 1.2rem;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.cartitem__select:hover,
+.cartitem__select:focus,
+.cartitem__select:active {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+
+.cartitem__deleteBtn {
+    padding: 10px 17px;
+    color: red;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* make the button appear a little bit bigger when cursor hover over */
+.cartitem__deleteBtn:hover,
+.cartitem__deleteBtn:focus,
+.cartitem__deleteBtn:active {
+    background: rgb(0, 0, 0);
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+}
+
+@media (max-width: 700px) {
+    .cartitem__name {
+        font-size: 20px;
+    }
+
+    .cartitem__price {
+        font-size: 1rem;
+    }
+
+    .cartitem__select {
+        font-size: 0.8rem;
+    }
+
+    .cartitem__deleteBtn {
+        padding: 8px 13px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartitem__name {
+        font-size: 20px;
+    }
+
+    .cartitem__price {
+        font-size: 0.9rem;
+    }
+
+    .cartitem__deleteBtn {
+        padding: 5px 8px;
+    }
+    
+    .cartitem__select {
+        padding: 1px;
+    }
+
+}
