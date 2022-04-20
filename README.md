@@ -42,7 +42,7 @@ $ npm run dev (for both client and server side)
 ```
 ## ENV
 
-Create a .env file in the root directory and add the following
+Create a .env file in the root directory and add the following:
 
 ```
 PORT = 5000
