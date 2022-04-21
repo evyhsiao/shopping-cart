@@ -16,7 +16,6 @@
 
 - Express
 - Mongoose
-- Json Web Token (For authentication)
 
 #### Frontend
 
