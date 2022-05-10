@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
   res.json({ message: "API running..." });
 });
 
+// 會對 /api/products 路徑上任何類型的 HTTP 要求，執行此函數。
 app.use("/api/products", productRoutes);
 
 const PORT = process.env.PORT || 5000;

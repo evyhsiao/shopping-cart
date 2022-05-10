@@ -3,8 +3,9 @@ import axios from "axios";
 
 export const getProducts = () => async (dispatch) => {
   try {
+    //  dispatch an action to the store
     dispatch({ type: actionTypes.GET_PRODUCTS_REQUEST });
-
+    // 從前端(client)通過proxy對後端(server)發出get請求
     const { data } = await axios.get("/api/products");
 
     dispatch({

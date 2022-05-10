@@ -10,10 +10,15 @@ import { getProducts as listProducts } from "../redux/actions/productActions";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
-
+  // state.getProducts(reducer) return products/loading/error
   const getProducts = useSelector((state) => state.getProducts);
   const { products, loading, error } = getProducts;
 
+  // useEffect 吃兩個參數，第一個參數是一個函式，第二個參數則是一個陣列。
+  // 第二個陣列參數代表的是這個 effect 的 dependency，
+  // react 會你記住這個值，當這個值有變動時就會觸發這個 effect 的 function。
+  // Making asynchronous API calls for data
+  // Manually updating the DOM element
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);

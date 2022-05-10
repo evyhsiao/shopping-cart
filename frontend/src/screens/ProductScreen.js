@@ -2,7 +2,7 @@ import "./ProductScreen.css";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from 'react-router-dom';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // Actions
 import { getProductDetails } from "../redux/actions/productActions";
@@ -12,6 +12,7 @@ const ProductScreen = () => {
     const [qty, setQty] = useState(1);
     const dispatch = useDispatch();
 
+    // 取得 `/product/${productId}` 上的 id
     const { id } = useParams();
 
     const productDetails = useSelector((state) => state.getProductDetails);

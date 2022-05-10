@@ -19,6 +19,7 @@ export const cartReducer = (state = CART_INITIAL_STATE, action) => {
                     ...state,
                     // set it to a new cart items, going throught the old array, map throught each item in the array
                     // if x.product === existItem.product set to the new item in the action.payload, else set it equal to the current item which is mapping throught
+                    // 如果該商品已存在在購物車，將其取代
                     cartItems: state.cartItems.map((x) =>
             x.product === existItem.product ? item : x
           ),
