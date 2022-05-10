@@ -16,7 +16,6 @@
 
 - Express
 - Mongoose
-- Json Web Token (For authentication)
 
 #### Frontend
 
@@ -51,4 +50,4 @@ MONGO_URI = your mongodb uri
 
 ## Reference
 
-This project refer to the following video tutorial: `https://youtu.be/0divhP3pEsg`
+This project refers to the following video tutorial: `https://youtu.be/0divhP3pEsg`
